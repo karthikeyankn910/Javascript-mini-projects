@@ -1,0 +1,35 @@
+.counter {
+    width: 50%;
+    margin: auto;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h1 {
+    text-align:center;
+}
+.count {
+    padding: 1rem;
+    border-radius: 10px;
+}
+.btn {
+    padding: 1rem;
+    background: gray;
+    font-weight: bolder;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.zero {
+    background: none;
+    color: black;
+}
+.positive {
+    background: green;
+    color: white;
+}
+.negative {
+    background: red;
+    color: white;
+}

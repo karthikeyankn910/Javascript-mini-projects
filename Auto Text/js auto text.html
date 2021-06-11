@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            .text {
+                padding: 1rem;
+                border: 1px solid black;
+                min-height: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class = 'text'></h1>
+    </body>
+    <script>
+        const text = document.querySelector('.text');
+        const mytext = '<onTheCode>';
+        let i = 0;
+        let temptext = ''
+        function getText () {
+            temptext = temptext + mytext[i];
+            text.innerText = temptext;
+     
+            i++;
+            if(i == mytext.length) {
+                
+                temptext = '';
+                i = 0;
+            }
+            
+            
+        }
+        setInterval(getText, 500);
+    </script>
+</html>
